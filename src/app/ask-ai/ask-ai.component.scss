@@ -1,0 +1,215 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px 0;
+}
+.row-layout {
+  display: flex;
+}
+.header-section {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  padding: 24px 24px 12px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.title-block {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 4px 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.chat-area {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px;
+  position: relative;
+  padding: 0 24px 24px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.history-list {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px 0;
+  position: relative;
+  min-width: 260px;
+  max-width: 320px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.active-dialogue-box {
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px 0;
+  position: relative;
+  min-width: 460px;
+  flex-grow: 2;
+  flex-basis: 0;
+}
+.quick-prompt-choices {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px 12px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.dialogue-stack {
+  background-color: var(--ig-surface-100);
+  border-radius: 12px;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px 0;
+  position: relative;
+  padding: 20px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.user-bubble {
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 0 12px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.content-panel {
+  background-color: var(--ig-primary-500);
+  border-radius: 12px 0px 12px 12px;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  padding: 12px 16px;
+  min-width: 50px;
+  min-height: 50px;
+}
+.ai-assistant-bubble {
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 0 12px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.content-panel_1 {
+  background-color: var(--ig-surface-200);
+  border-radius: 0px 12px 12px;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px 0;
+  position: relative;
+  padding: 12px 16px;
+  min-width: 50px;
+  min-height: 50px;
+}
+.input-bar {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 0 12px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.content {
+  height: max-content;
+  min-width: min-content;
+}
+.text-s-1a-1ymyj {
+  color: var(--ig-gray-400);
+  height: max-content;
+  min-width: min-content;
+}
+.icon {
+  color: var(--ig-primary-500-contrast);
+}
+.avatar-zhzi-2r {
+  --ig-size: var(--ig-size-small);
+}
+.icon-xileyb {
+  --size: 18px;
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+}
+.quick-prompt-1 {
+  width: max-content;
+  height: max-content;
+}
+.text-rr-4-3i {
+  color: var(--ig-primary-500-contrast);
+  height: max-content;
+  min-width: min-content;
+}
+.avatar-afm-6o-9 {
+  --ig-size: var(--ig-size-small);
+  --igx-avatar-background: var(--ig-primary-100);
+}
+.icon_1 {
+  color: var(--ig-primary-500);
+}
+.text-zbyou {
+  color: var(--ig-primary-500);
+  height: max-content;
+  min-width: min-content;
+}
+.avatar-afm-6o-9_1::part(base) {
+  --igx-avatar-color: var(--ig-primary-500);
+}
+.new-chat {
+  --foreground: var(--ig-primary-500-contrast);
+  --background: var(--ig-primary-500);
+  --ig-size: var(--ig-size-medium);
+  height: max-content;
+}
+.message-field {
+  height: max-content;
+  min-width: min-content;
+  flex: 1 0 0;
+}
+.icon-button-jxtr-3 {
+  --ig-size: var(--ig-size-medium);
+}
+.send {
+  --foreground: var(--ig-primary-500-contrast);
+  --background: var(--ig-primary-500);
+  --ig-size: var(--ig-size-large);
+  height: max-content;
+  flex-shrink: 0;
+}
+.active-chats {
+  height: max-content;
+}

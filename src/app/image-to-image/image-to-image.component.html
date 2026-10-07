@@ -1,0 +1,113 @@
+<div class="row-layout header-section">
+  <div class="column-layout title-block">
+    <h4 class="content">
+      Image to Image Generator
+    </h4>
+    <p class="ig-typography__body-2 text-vc-6k-9">
+      Generate creative variations based on an upload image and target prompt guide.
+    </p>
+  </div>
+</div>
+<div class="row-layout workspace">
+  <div class="column-layout controls-column">
+    <div class="column-layout drag-drop-area">
+      <igx-icon class="icon-x-2m-4c">
+        cloud_upload
+      </igx-icon>
+      <p class="content">
+        Upload Reference Image
+      </p>
+      <p class="ig-typography__caption text-7-4xqt">
+        Supports JPG, PNG, WEBP up to 25MB
+      </p>
+    </div>
+    <igx-input-group type="border" class="user-input">
+      <label igxLabel>Prompt</label>
+      <textarea placeholder="Transform this image into a cinematic professional photograph while preserving identity..." [(ngModel)]="value" igxInput></textarea>
+    </igx-input-group>
+    <igx-input-group type="border" class="user-input">
+      <label igxLabel>Negative Prompt</label>
+      <textarea placeholder="low quality, bad anatomy, deformed elements, out of focus..." igxInput></textarea>
+    </igx-input-group>
+    <igx-select type="border" placeholder="Cinematic Photorealistic" class="user-input">
+      <igx-select-item value="1">
+        Cinematic Portrait
+      </igx-select-item>
+      <igx-select-item value="2">
+        Photorealistic Commercial
+      </igx-select-item>
+      <igx-select-item value="3">
+        Anime/Manga Style
+      </igx-select-item>
+      <igx-select-item value="4">
+        Cyberpunk Matte Painting
+      </igx-select-item>
+      <label igxLabel>Style Preset</label>
+    </igx-select>
+    <div class="row-layout meta-selectors">
+      <igx-select type="border" placeholder="1:1" class="aspect-selector">
+        <igx-select-item value="1">
+          1:1 Square
+        </igx-select-item>
+        <igx-select-item value="2">
+          16:9 Cinema
+        </igx-select-item>
+        <igx-select-item value="3">
+          9:16 Portrait
+        </igx-select-item>
+        <igx-select-item value="4">
+          4:3 Desktop
+        </igx-select-item>
+        <label igxLabel>Aspect Ratio</label>
+      </igx-select>
+      <igx-select type="border" placeholder="1080p (HQ)" class="aspect-selector">
+        <igx-select-item value="1">
+          1024x1024 (Standard)
+        </igx-select-item>
+        <igx-select-item value="2">
+          2048x2048 (HD+)
+        </igx-select-item>
+        <label igxLabel>Output Resolution</label>
+      </igx-select>
+    </div>
+    <div class="column-layout strength-slider">
+      <p class="ig-typography__caption text-vc-6k-9">
+        Control Strength (Denoising Influence)
+      </p>
+      <igx-slider [ngModel]="value1" [minValue]="0" [maxValue]="100" [step]="10" [primaryTicks]="3" [secondaryTicks]="2" [secondaryTickLabels]="false" [showTicks]="true" [showTicks]="true" (ngModelChange)="value1 = $event" class="slider-kvabls"></igx-slider>
+    </div>
+    <button igxButton="contained" type="button" class="generate-i2-i-button">
+      <igx-icon class="icon">
+        bolt
+      </igx-icon>
+      <span>Generate Image (Cost: 2 Credits)</span>
+    </button>
+  </div>
+  <div class="column-layout preview-column">
+    <div class="column-layout output-display">
+      <img src="/assets/a-high-dynamic-range-cinematic-922c3c5fa8bc.png" alt="" class="output-placeholder" />
+      <div class="row-layout action-bar">
+        <p class="ig-typography__caption text-7-4xqt">
+          Render Status: Completed in 3.4 seconds
+        </p>
+        <div class="row-layout action-buttons">
+          <button igxIconButton="flat" class="icon-button-4m-9oij">
+            <igx-icon class="icon_1">
+              download
+            </igx-icon>
+          </button>
+          <button igxIconButton="flat" class="icon-button-iaruetq">
+            <igx-icon class="icon_2">
+              favorite
+            </igx-icon>
+          </button>
+          <button igxIconButton="flat" class="icon-button-q-2vl-3m">
+            <igx-icon>
+              refresh
+            </igx-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

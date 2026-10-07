@@ -1,0 +1,3 @@
+export const TrafficDatasourceSetup: Record<string, any> = {
+  'TrafficEPType': [{"Hour":"00:00","ImageEngine":1240,"TextEngine":3150},{"Hour":"02:00","ImageEngine":850,"TextEngine":2100},{"Hour":"04:00","ImageEngine":620,"TextEngine":1540},{"Hour":"06:00","ImageEngine":1100,"TextEngine":2800},{"Hour":"08:00","ImageEngine":3400,"TextEngine":6700},{"Hour":"10:00","ImageEngine":4800,"TextEngine":8900},{"Hour":"12:00","ImageEngine":5200,"TextEngine":9400},{"Hour":"14:00","ImageEngine":4900,"TextEngine":8800},{"Hour":"16:00","ImageEngine":4600,"TextEngine":8500},{"Hour":"18:00","ImageEngine":4100,"TextEngine":7900},{"Hour":"20:00","ImageEngine":3200,"TextEngine":6100},{"Hour":"22:00","ImageEngine":2100,"TextEngine":4300}],
+};

@@ -1,0 +1,129 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px 0;
+}
+.row-layout {
+  display: flex;
+}
+.header-section {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  padding: 24px 24px 12px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.title-block {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 4px 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.workspace {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 20px 0;
+  position: relative;
+  padding: 0 24px 24px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.filters-toolbar {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  gap: 12px 16px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.select-filters-group {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 0 12px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.media-grid {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 20px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.creations-item {
+  min-width: 240px;
+  max-width: 280px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.content {
+  height: max-content;
+  min-width: min-content;
+}
+.text-icn-6-6 {
+  color: var(--ig-gray-400);
+  height: max-content;
+  min-width: min-content;
+}
+.image {
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+.text-j-8h-3l {
+  color: var(--ig-gray-500);
+  height: max-content;
+  min-width: min-content;
+}
+.icon {
+  color: var(--ig-warn-500);
+}
+.icon_1 {
+  color: var(--ig-error-500);
+}
+.search-box {
+  min-width: 280px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.category-select {
+  min-width: 180px;
+  flex-shrink: 0;
+}
+.icon-button-dbqdhs {
+  --ig-size: var(--ig-size-small);
+}
+.icon-button-ew-2-8p-8 {
+  --foreground: var(--ig-warn-500);
+  --ig-size: var(--ig-size-small);
+}
+.icon-button-jmn-2d-6 {
+  --foreground: var(--ig-error-500);
+  --ig-size: var(--ig-size-small);
+}

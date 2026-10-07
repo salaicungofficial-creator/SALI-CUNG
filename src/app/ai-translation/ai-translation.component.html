@@ -1,0 +1,107 @@
+<div class="row-layout header-section">
+  <div class="column-layout title-block">
+    <h4 class="content">
+      Hyper-Contextual AI Translator
+    </h4>
+    <p class="ig-typography__body-2 text-p-1wzc">
+      Translates standard text with localized regional expressions, idioms, and industry nuances preserved.
+    </p>
+  </div>
+</div>
+<div class="row-layout workspace-layout">
+  <div class="column-layout source-language-block">
+    <igx-select type="border" placeholder="Automatic Language Detection" class="user-input">
+      <igx-select-item value="auto">
+        Auto-Detect Source
+      </igx-select-item>
+      <igx-select-item value="en">
+        English (US)
+      </igx-select-item>
+      <igx-select-item value="es">
+        Spanish (Español)
+      </igx-select-item>
+      <igx-select-item value="ja">
+        Japanese (日本語)
+      </igx-select-item>
+      <igx-select-item value="zh">
+        Chinese (中文)
+      </igx-select-item>
+      <igx-select-item value="ar">
+        Arabic (العربية)
+      </igx-select-item>
+      <label igxLabel>From Language</label>
+    </igx-select>
+    <igx-input-group type="box" class="user-input">
+      <label igxLabel>Source Text</label>
+      <textarea placeholder="Type or paste your content here..." [(ngModel)]="value" igxInput></textarea>
+    </igx-input-group>
+    <div class="row-layout source-actions">
+      <button igxButton="flat" type="button" class="button-6dbiix">
+        <igx-icon>
+          mic
+        </igx-icon>
+        <span>Voice Input</span>
+      </button>
+      <p class="ig-typography__caption text-moia-8-6">
+        142 Characters
+      </p>
+    </div>
+  </div>
+  <div class="column-layout swap-column">
+    <button igxIconButton="contained" class="icon-button-k-1u-9-0c">
+      <igx-icon class="icon">
+        swap_horiz
+      </igx-icon>
+    </button>
+  </div>
+  <div class="column-layout source-language-block">
+    <igx-select type="border" placeholder="Japanese (日本語)" class="user-input">
+      <igx-select-item value="en">
+        English (US)
+      </igx-select-item>
+      <igx-select-item value="es">
+        Spanish (Español)
+      </igx-select-item>
+      <igx-select-item value="ja">
+        Japanese (日本語)
+      </igx-select-item>
+      <igx-select-item value="zh">
+        Chinese (中文)
+      </igx-select-item>
+      <igx-select-item value="ar">
+        Arabic (العربية)
+      </igx-select-item>
+      <label igxLabel>To Language</label>
+    </igx-select>
+    <div class="column-layout output-display">
+      <p class="ig-typography__caption text-sp-1i-6">
+        AI TARGET TRANSLATION
+      </p>
+      <p class="content">
+        次世代のクリエイティブなマルチモーダル人工知能へようこそ。 UOR Social は高速で応答性が高く、あなたのアイデアを表現する準備が整っています。
+      </p>
+    </div>
+    <div class="row-layout target-actions">
+      <div class="row-layout utility-button-group">
+        <button igxButton="flat" type="button" class="button-6dbiix">
+          <igx-icon>
+            content_copy
+          </igx-icon>
+          <span>Copy</span>
+        </button>
+        <button igxButton="flat" type="button" class="button-6dbiix">
+          <igx-icon>
+            volume_up
+          </igx-icon>
+          <span>Listen (TTS)</span>
+        </button>
+      </div>
+      <button igxButton="contained" type="button" class="execute-translation">
+        <igx-icon class="icon">
+          translate
+        </igx-icon>
+        <span>Translate Now</span>
+      </button>
+    </div>
+  </div>
+</div>

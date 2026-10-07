@@ -1,0 +1,119 @@
+<div class="row-layout wrapper">
+  <div class="column-layout settings-column">
+    <div class="column-layout header-text">
+      <h3 class="content">
+        Settings &amp; Platform Plan
+      </h3>
+      <p class="text-1-8p-7to">
+        Configure your local workspace, private APIs, credit billing, and active security sessions.
+      </p>
+    </div>
+    <igx-accordion [singleBranchExpand]="true" class="system-accordion">
+      <igx-expansion-panel>
+        <igx-expansion-panel-body>
+          <div class="column-layout column-layout-bp-0-2lw">
+            <div class="row-layout inputs">
+              <igx-input-group type="border" class="email-address-input">
+                <input type="email" [(ngModel)]="value" igxInput />
+                <label igxLabel>E-mail Address</label>
+              </igx-input-group>
+              <igx-input-group type="border" class="email-address-input">
+                <input type="text" [(ngModel)]="value1" igxInput />
+                <label igxLabel>Workspace Username</label>
+              </igx-input-group>
+            </div>
+            <div class="row-layout action-row">
+              <button igxButton="contained" type="button" class="button-1b-8-2q-2">
+                Save Credentials
+              </button>
+              <button igxButton="outlined" type="button" class="button-8-1-5t-5r">
+                Cancel Changes
+              </button>
+            </div>
+          </div>
+        </igx-expansion-panel-body>
+        <igx-expansion-panel-header iconPosition="right">
+          <igx-expansion-panel-title>Personal Workspace Profile</igx-expansion-panel-title>
+          <igx-expansion-panel-description>Manage your credentials, private email and subscriptions</igx-expansion-panel-description>
+        </igx-expansion-panel-header>
+      </igx-expansion-panel>
+      <igx-expansion-panel>
+        <igx-expansion-panel-body>
+          <div class="column-layout column-layout-fvduc">
+            <div class="row-layout subscription-tiers">
+              <igx-card class="plan-free-card">
+                <igx-card-header>
+                  <h3 igxCardHeaderTitle>
+                    Title goes here...
+                  </h3>
+                  <h5 igxCardHeaderSubtitle>
+                    Subtitle goes here...
+                  </h5>
+                </igx-card-header>
+                <igx-card-content>
+                  <div class="column-layout column-layout-ckw-6o">
+                    <h5 class="content">
+                      FREE PLAN
+                    </h5>
+                    <p class="content">
+                      $0 / month
+                    </p>
+                    <p class="ig-typography__body-2 text-1-8p-7to">
+                      100 free monthly generation credits to test all major tools.
+                    </p>
+                  </div>
+                </igx-card-content>
+                <igx-card-actions>
+                  <ng-container igxStart>
+                    <button igxButton="outlined" disabled="true" type="button" class="button-9px-8nf">
+                      Your Current Tier
+                    </button>
+                  </ng-container>
+                  <ng-container igxEnd></ng-container>
+                </igx-card-actions>
+              </igx-card>
+              <igx-card class="plan-pro-card">
+                <igx-card-header>
+                  <h3 igxCardHeaderTitle>
+                    Title goes here...
+                  </h3>
+                  <h5 igxCardHeaderSubtitle>
+                    Subtitle goes here...
+                  </h5>
+                </igx-card-header>
+                <igx-card-content>
+                  <div class="column-layout column-layout-ckw-6o">
+                    <div class="row-layout badge-title">
+                      <h5 class="content">
+                        PRO PLAN
+                      </h5>
+                      <igx-badge type="success" value="RECOMMENDED" class="badge-3-3qm-5n"></igx-badge>
+                    </div>
+                    <p class="content">
+                      $49 / month
+                    </p>
+                    <p class="ig-typography__body-2 text-1-8p-7to">
+                      5,000 monthly high-speed priority generation credits.
+                    </p>
+                  </div>
+                </igx-card-content>
+                <igx-card-actions>
+                  <ng-container igxStart>
+                    <button igxButton="contained" type="button" class="button-ooi-9o-6">
+                      Upgrade to Pro
+                    </button>
+                  </ng-container>
+                  <ng-container igxEnd></ng-container>
+                </igx-card-actions>
+              </igx-card>
+            </div>
+          </div>
+        </igx-expansion-panel-body>
+        <igx-expansion-panel-header iconPosition="right">
+          <igx-expansion-panel-title>AI Credits &amp; Subscriptions</igx-expansion-panel-title>
+          <igx-expansion-panel-description>Free/Pro status &amp; direct payment billing integration</igx-expansion-panel-description>
+        </igx-expansion-panel-header>
+      </igx-expansion-panel>
+    </igx-accordion>
+  </div>
+</div>

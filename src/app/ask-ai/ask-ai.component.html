@@ -1,0 +1,139 @@
+<div class="row-layout header-section">
+  <div class="column-layout title-block">
+    <h4 class="content">
+      Wron AI Assistant
+    </h4>
+    <p class="ig-typography__body-2 text-s-1a-1ymyj">
+      Ask any request - copywriting, business brainstorming, formatting code, or enhancing prompts.
+    </p>
+  </div>
+</div>
+<div class="row-layout chat-area">
+  <div class="column-layout history-list">
+    <button igxButton="contained" type="button" class="new-chat">
+      <igx-icon class="icon">
+        add
+      </igx-icon>
+      <span>New Conversation</span>
+    </button>
+    <igx-list class="active-chats">
+      <igx-list-item [selected]="this.activeChatsSelectedItem != null && this.activeChatsSelectedItem === '0'" (click)="activeChatsSelectedItem = '0'">
+        <span igxListThumbnail>
+          <igx-avatar shape="circle" class="avatar-zhzi-2r">
+            <igx-icon>
+              forum
+            </igx-icon>
+          </igx-avatar>
+        </span>
+        <span igxListLineTitle>YouTube SEO Script Draft</span>
+        <span igxListLineSubTitle>Active 2 mins ago</span>
+        <span igxListAction>
+          <igx-icon class="icon-xileyb">
+            chevron_right
+          </igx-icon>
+        </span>
+      </igx-list-item>
+      <igx-list-item [selected]="this.activeChatsSelectedItem != null && this.activeChatsSelectedItem === '1'" (click)="activeChatsSelectedItem = '1'">
+        <span igxListThumbnail>
+          <igx-avatar shape="circle" class="avatar-zhzi-2r">
+            <igx-icon>
+              image
+            </igx-icon>
+          </igx-avatar>
+        </span>
+        <span igxListLineTitle>Cinematic Landscape Prompts</span>
+        <span igxListLineSubTitle>1 hour ago</span>
+        <span igxListAction>
+          <igx-icon class="icon-xileyb">
+            chevron_right
+          </igx-icon>
+        </span>
+      </igx-list-item>
+      <igx-list-item [selected]="this.activeChatsSelectedItem != null && this.activeChatsSelectedItem === '2'" (click)="activeChatsSelectedItem = '2'">
+        <span igxListThumbnail>
+          <igx-avatar shape="circle" class="avatar-zhzi-2r">
+            <igx-icon>
+              code
+            </igx-icon>
+          </igx-avatar>
+        </span>
+        <span igxListLineTitle>Translate JSON properties</span>
+        <span igxListLineSubTitle>Yesterday</span>
+        <span igxListAction>
+          <igx-icon class="icon-xileyb">
+            chevron_right
+          </igx-icon>
+        </span>
+      </igx-list-item>
+    </igx-list>
+  </div>
+  <div class="column-layout active-dialogue-box">
+    <div class="row-layout quick-prompt-choices">
+      <igx-chip class="quick-prompt-1">
+        <igx-prefix>
+          <igx-icon class="icon-xileyb">
+            auto_fix_high
+          </igx-icon>
+        </igx-prefix>
+        Improve my prompt
+      </igx-chip>
+      <igx-chip class="quick-prompt-1">
+        <igx-prefix>
+          <igx-icon class="icon-xileyb">
+            description
+          </igx-icon>
+        </igx-prefix>
+        Write a professional YouTube description
+      </igx-chip>
+      <igx-chip class="quick-prompt-1">
+        <igx-prefix>
+          <igx-icon class="icon-xileyb">
+            campaign
+          </igx-icon>
+        </igx-prefix>
+        Give me 10 Fiverr gig ideas
+      </igx-chip>
+    </div>
+    <div class="column-layout dialogue-stack">
+      <div class="row-layout user-bubble">
+        <div class="column-layout content-panel">
+          <p class="ig-typography__body-2 text-rr-4-3i">
+            How can I create an extremely beautiful house design prompt for architectural generation?
+          </p>
+        </div>
+        <igx-avatar initials="ME" shape="circle" class="avatar-zhzi-2r"></igx-avatar>
+      </div>
+      <div class="row-layout ai-assistant-bubble">
+        <igx-avatar shape="circle" class="avatar-afm-6o-9 avatar-afm-6o-9_1">
+          <igx-icon class="icon_1">
+            smart_toy
+          </igx-icon>
+        </igx-avatar>
+        <div class="column-layout content-panel_1">
+          <p class="ig-typography__body-2 content">
+            Here is a production-quality architectural prompt you can feed into our Text to Image generator:
+          </p>
+          <p class="ig-typography__body-2 text-zbyou">
+            "Create a photorealistic luxury contemporary house designed by an award-winning architect, featuring clean geometric architecture, floor-to-ceiling glass windows, natural stone, warm architectural lighting, landscaped gardens, realistic materials, cinematic composition."
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row-layout input-bar">
+      <igx-input-group type="border" class="message-field">
+        <input type="text" [(ngModel)]="value" placeholder="Type a message to Wron AI..." igxInput />
+      </igx-input-group>
+      <button igxIconButton="flat" class="icon-button-jxtr-3">
+        <igx-icon>
+          mic
+        </igx-icon>
+      </button>
+      <button igxButton="contained" type="button" class="send">
+        <igx-icon class="icon">
+          send
+        </igx-icon>
+        <span>Send</span>
+      </button>
+    </div>
+  </div>
+</div>

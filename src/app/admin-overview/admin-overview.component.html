@@ -1,0 +1,125 @@
+<div class="row-layout wrapper-section">
+  <div class="column-layout main-container">
+    <div class="row-layout header-section">
+      <div class="column-layout title-block">
+        <p class="ig-typography__overline text-j-2-8dmt">
+          SYSTEM CONTROL PANEL
+        </p>
+        <h3 class="content">
+          Platform &amp; Provider Monitoring
+        </h3>
+        <p class="ig-typography__body-2 text-js-6-2-2">
+          Analyze real-time credit transactions, engine load metrics, and active API provider states.
+        </p>
+      </div>
+    </div>
+    <div class="row-layout kpi-row">
+      <igx-card class="api-load-kpi">
+        <igx-card-header>
+          <h3 igxCardHeaderTitle>
+            Title goes here...
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+            Subtitle goes here...
+          </h5>
+        </igx-card-header>
+        <igx-card-content>
+          <div class="column-layout column-layout-solwli">
+            <div class="row-layout meta-title">
+              <p class="ig-typography__overline text-js-6-2-2">
+                DAILY TOTAL REQUESTS
+              </p>
+              <igx-avatar shape="rounded" class="avatar-bo-0uz-2 avatar-bo-0uz-2_1">
+                <igx-icon class="icon">
+                  api
+                </igx-icon>
+              </igx-avatar>
+            </div>
+            <h4 class="content">
+              142,850
+            </h4>
+            <div class="row-layout trend-row">
+              <igx-icon class="icon-2xfre-5">
+                trending_up
+              </igx-icon>
+              <p class="ig-typography__caption text-1-5-4u-9a">
+                +12.4%
+              </p>
+              <p class="ig-typography__caption text-js-6-2-2">
+                vs yesterday
+              </p>
+            </div>
+          </div>
+        </igx-card-content>
+      </igx-card>
+      <igx-card class="api-load-kpi">
+        <igx-card-header>
+          <h3 igxCardHeaderTitle>
+            Title goes here...
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+            Subtitle goes here...
+          </h5>
+        </igx-card-header>
+        <igx-card-content>
+          <div class="column-layout column-layout-solwli">
+            <div class="row-layout meta-title">
+              <p class="ig-typography__overline text-js-6-2-2">
+                CREDITS EXPENDED
+              </p>
+              <igx-avatar shape="rounded" class="avatar-6mxpmk avatar-6mxpmk_1">
+                <igx-icon class="icon_1">
+                  electric_bolt
+                </igx-icon>
+              </igx-avatar>
+            </div>
+            <h4 class="content">
+              548,200
+            </h4>
+            <div class="row-layout trend-row">
+              <igx-icon class="icon-2xfre-5">
+                trending_up
+              </igx-icon>
+              <p class="ig-typography__caption text-1-5-4u-9a">
+                +8.1%
+              </p>
+              <p class="ig-typography__caption text-js-6-2-2">
+                vs yesterday
+              </p>
+            </div>
+          </div>
+        </igx-card-content>
+      </igx-card>
+    </div>
+    <div class="row-layout kpi-row">
+      <div class="column-layout request-trends">
+        <div class="column-layout title-block_1">
+          <h5 class="content">
+            Generation Traffic by Engine Type
+          </h5>
+          <p class="ig-typography__body-2 text-js-6-2-2">
+            Hourly logs detailing dynamic API router distributions.
+          </p>
+        </div>
+        <apx-chart [series]="series" [chart]="chart" [stroke]="stroke" [title]="title" [xaxis]="xaxis" [yaxis]="yaxis" [theme]="theme" [legend]="legend" [markers]="markers" [dataLabels]="dataLabels" class="traffic-trends-chart"></apx-chart>
+      </div>
+      <div class="column-layout generation-logs">
+        <div class="column-layout title-block_1">
+          <h5 class="content">
+            Active Processing Queue
+          </h5>
+          <p class="ig-typography__body-2 text-js-6-2-2">
+            Live background rendering status overview.
+          </p>
+        </div>
+        <igx-grid [data]="adminQueueDatasourceActiveQueue" primaryKey="ID" [allowFiltering]="true" filterMode="excelStyleFilter" width="100%" height="max-content" class="queue-grid">
+          <igx-column field="ID" header="ID" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+          <igx-column field="User" header="User" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+          <igx-column field="Model" header="Model/Provider" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+          <igx-column field="Duration" header="Duration (sec)" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+          <igx-column field="Status" header="Status" [filterable]="true" [sortable]="true" [selectable]="false"></igx-column>
+        </igx-grid>
+      </div>
+    </div>
+  </div>
+</div>

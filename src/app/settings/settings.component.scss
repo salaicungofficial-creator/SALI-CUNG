@@ -1,0 +1,174 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 0;
+}
+.row-layout {
+  display: flex;
+}
+.wrapper {
+  justify-content: center;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  padding: 48px 32px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.settings-column {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 32px 0;
+  position: relative;
+  max-width: 1400px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.header-text {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.system-accordion {
+  overflow-y: auto;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  flex-shrink: 0;
+}
+.column-layout-bp-0-2lw {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.inputs {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.action-row {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 0 12px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.column-layout-fvduc {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.subscription-tiers {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 20px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.plan-free-card {
+  --background: var(--ig-surface-100);
+  min-width: 240px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.column-layout-ckw-6o {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.plan-pro-card {
+  --background: var(--ig-surface-200);
+  --outline-color: var(--ig-primary-500);
+  min-width: 240px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.badge-title {
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.content {
+  height: max-content;
+  min-width: min-content;
+}
+.text-1-8p-7to {
+  color: var(--ig-gray-400);
+  height: max-content;
+  min-width: min-content;
+}
+.email-address-input {
+  height: max-content;
+  min-width: min-content;
+  flex: 1 0 0;
+}
+.button-1b-8-2q-2 {
+  --foreground: var(--ig-primary-500-contrast);
+  --background: var(--ig-primary-500);
+  --ig-size: var(--ig-size-medium);
+  height: max-content;
+  flex-shrink: 0;
+}
+.button-8-1-5t-5r {
+  --ig-size: var(--ig-size-medium);
+  height: max-content;
+  flex-shrink: 0;
+}
+.button-9px-8nf {
+  --ig-size: var(--ig-size-small);
+  height: max-content;
+}
+.button-ooi-9o-6 {
+  --foreground: var(--ig-primary-500-contrast);
+  --background: var(--ig-primary-500);
+  --ig-size: var(--ig-size-small);
+  height: max-content;
+}
+.badge-3-3qm-5n {
+  width: max-content;
+  height: max-content;
+}

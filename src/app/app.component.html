@@ -1,0 +1,63 @@
+<igx-navbar class="top-navigation-bar">
+  <igx-navbar-action>
+    <button igxIconButton="flat" [igxToggleAction]="sidebarMenu">
+      <igx-icon>
+        menu
+      </igx-icon>
+    </button>
+  </igx-navbar-action>
+  <igx-navbar-title class="navbar-content">
+    <h6 class="h6">
+      ALL IN ONE AI (UOR SOCIAL)
+    </h6>
+    <button igxButton="flat" type="button" class="quick-link-to-credits">
+      <igx-icon class="icon">
+        bolt
+      </igx-icon>
+      <span>4,850 Credits</span>
+    </button>
+  </igx-navbar-title>
+  <button igxIconButton="flat">
+    <igx-icon>
+      help_outline
+    </igx-icon>
+  </button>
+  <button igxIconButton="flat">
+    <igx-icon>
+      notifications
+    </igx-icon>
+  </button>
+</igx-navbar>
+<div class="row-layout master-horizontal-container">
+  <igx-nav-drawer [isOpen]="true" [pin]="true" [pinThreshold]="stringToNumber('768')" width="260px" #sidebarMenu class="sidebar-menu">
+    <ng-template igxDrawer>
+      <div igxDrawerItem [active]="isActive(`/dashboard`)" [routerLink]="[`/dashboard`]">
+        <span>Dashboard</span>
+      </div>
+      <div igxDrawerItem [active]="isActive(`/image-to-image`)" [routerLink]="[`/image-to-image`]">
+        <span>Image to Image</span>
+      </div>
+      <div igxDrawerItem [active]="isActive(`/text-to-image`)" [routerLink]="[`/text-to-image`]">
+        <span>Text to Image</span>
+      </div>
+      <div igxDrawerItem [active]="isActive(`/ai-translation`)" [routerLink]="[`/ai-translation`]">
+        <span>AI Translation</span>
+      </div>
+      <div igxDrawerItem [active]="isActive(`/ask-ai`)" [routerLink]="[`/ask-ai`]">
+        <span>Ask AI Chat</span>
+      </div>
+      <div igxDrawerItem [active]="isActive(`/my-creations`)" [routerLink]="[`/my-creations`]">
+        <span>My Creations</span>
+      </div>
+      <div igxDrawerItem [active]="isActive(`/settings`)" [routerLink]="[`/settings`]">
+        <span>Billing &amp; Settings</span>
+      </div>
+      <div igxDrawerItem [active]="isActive(`/admin-overview`)" [routerLink]="[`/admin-overview`]">
+        <span>Admin Monitoring</span>
+      </div>
+    </ng-template>
+  </igx-nav-drawer>
+  <div class="central-view-container">
+    <router-outlet></router-outlet>
+  </div>
+</div>

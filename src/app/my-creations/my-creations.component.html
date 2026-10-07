@@ -1,0 +1,135 @@
+<div class="row-layout header-section">
+  <div class="column-layout title-block">
+    <h4 class="content">
+      My Personal Portfolio Creations
+    </h4>
+    <p class="ig-typography__body-2 text-icn-6-6">
+      Manage, download and sort through your history of high-fidelity generations.
+    </p>
+  </div>
+</div>
+<div class="column-layout workspace">
+  <div class="row-layout filters-toolbar">
+    <igx-input-group type="search" class="search-box">
+      <input type="search" [(ngModel)]="value" placeholder="Search prompts, categories..." igxInput />
+      <label igxLabel>Search Creations</label>
+    </igx-input-group>
+    <div class="row-layout select-filters-group">
+      <igx-select type="border" placeholder="All Generations" class="category-select">
+        <igx-select-item value="all">
+          All Generations
+        </igx-select-item>
+        <igx-select-item value="image">
+          Images Only
+        </igx-select-item>
+        <igx-select-item value="video">
+          Videos Only
+        </igx-select-item>
+        <igx-select-item value="trans">
+          Translations
+        </igx-select-item>
+        <label igxLabel>Type Filter</label>
+      </igx-select>
+      <igx-select type="border" placeholder="Newest First" class="category-select">
+        <igx-select-item value="new">
+          Newest First
+        </igx-select-item>
+        <igx-select-item value="old">
+          Oldest First
+        </igx-select-item>
+        <igx-select-item value="fav">
+          Favorites
+        </igx-select-item>
+        <label igxLabel>Sort By</label>
+      </igx-select>
+    </div>
+  </div>
+  <div class="row-layout media-grid">
+    <igx-card class="creations-item">
+      <igx-card-media height="200px">
+        <img src="https://picsum.photos/id/1029/300/200" alt="" class="image" />
+      </igx-card-media>
+      <igx-card-header>
+        <h3 igxCardHeaderTitle>
+          Title goes here...
+        </h3>
+        <h5 igxCardHeaderSubtitle>
+          Subtitle goes here...
+        </h5>
+      </igx-card-header>
+      <igx-card-content>
+        <div class="column-layout title-block">
+          <p class="content">
+            Synthwave Flyer
+          </p>
+          <p class="ig-typography__caption text-j-8h-3l">
+            Rendered with Text to Image
+          </p>
+        </div>
+      </igx-card-content>
+      <igx-card-actions>
+        <ng-container igxStart></ng-container>
+        <ng-container igxEnd>
+          <button igxIconButton="flat" class="icon-button-dbqdhs">
+            <igx-icon>
+              download
+            </igx-icon>
+          </button>
+          <button igxIconButton="flat" class="icon-button-ew-2-8p-8">
+            <igx-icon class="icon">
+              favorite
+            </igx-icon>
+          </button>
+          <button igxIconButton="flat" class="icon-button-jmn-2d-6">
+            <igx-icon class="icon_1">
+              delete
+            </igx-icon>
+          </button>
+        </ng-container>
+      </igx-card-actions>
+    </igx-card>
+    <igx-card class="creations-item">
+      <igx-card-media height="200px">
+        <img src="/assets/cyberpunk-corporate-tower-arch-ff14a843efd7.png" alt="" class="image" />
+      </igx-card-media>
+      <igx-card-header>
+        <h3 igxCardHeaderTitle>
+          Title goes here...
+        </h3>
+        <h5 igxCardHeaderSubtitle>
+          Subtitle goes here...
+        </h5>
+      </igx-card-header>
+      <igx-card-content>
+        <div class="column-layout title-block">
+          <p class="content">
+            Neo-Tokyo Tower
+          </p>
+          <p class="ig-typography__caption text-j-8h-3l">
+            Rendered with Image to Image
+          </p>
+        </div>
+      </igx-card-content>
+      <igx-card-actions>
+        <ng-container igxStart></ng-container>
+        <ng-container igxEnd>
+          <button igxIconButton="flat" class="icon-button-dbqdhs">
+            <igx-icon>
+              download
+            </igx-icon>
+          </button>
+          <button igxIconButton="flat" class="icon-button-dbqdhs">
+            <igx-icon>
+              favorite_border
+            </igx-icon>
+          </button>
+          <button igxIconButton="flat" class="icon-button-jmn-2d-6">
+            <igx-icon class="icon_1">
+              delete
+            </igx-icon>
+          </button>
+        </ng-container>
+      </igx-card-actions>
+    </igx-card>
+  </div>
+</div>

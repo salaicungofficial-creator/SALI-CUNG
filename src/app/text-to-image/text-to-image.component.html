@@ -1,0 +1,148 @@
+<div class="row-layout header-section">
+  <div class="column-layout title-block">
+    <h4 class="title-qyf-6s">
+      Text to Image Master Engine
+    </h4>
+    <p class="ig-typography__body-2 text-gymqy-5">
+      Describe what you want to see, and AI will turn your words into production-grade artwork.
+    </p>
+  </div>
+</div>
+<div class="row-layout workspace">
+  <div class="column-layout controls-column">
+    <igx-input-group type="border" class="user-input">
+      <label igxLabel>Prompt</label>
+      <textarea placeholder="A futuristic cyberpunk astronaut exploring neon-lit alleyways of Kyoto..." [(ngModel)]="value" igxInput></textarea>
+    </igx-input-group>
+    <button igxButton="outlined" type="button" class="ai-prompt-enhancer-trigger">
+      <igx-icon class="icon">
+        auto_fix_high
+      </igx-icon>
+      <span>Enhance Prompt With AI</span>
+    </button>
+    <igx-input-group type="border" class="user-input">
+      <label igxLabel>Negative Prompt (Exclude from generation)</label>
+      <textarea placeholder="blurry, distorted faces, duplicate, cropped, bad framing..." igxInput></textarea>
+    </igx-input-group>
+    <igx-select type="border" placeholder="Sony A1" class="user-input">
+      <igx-select-item value="1">
+        Sony A1 (High Detail)
+      </igx-select-item>
+      <igx-select-item value="2">
+        Canon EOS R5 (Vibrant Tone)
+      </igx-select-item>
+      <igx-select-item value="3">
+        ARRI Alexa (Cinematic Film Look)
+      </igx-select-item>
+      <igx-select-item value="4">
+        RED Cinema Camera (Maximum Range)
+      </igx-select-item>
+      <label igxLabel>Camera Emulation</label>
+    </igx-select>
+    <igx-select type="border" placeholder="50mm Standard Portrait" class="user-input">
+      <igx-select-item value="1">
+        24mm (Wide-Angle / Landscape)
+      </igx-select-item>
+      <igx-select-item value="2">
+        50mm (Natural Depth / Standard)
+      </igx-select-item>
+      <igx-select-item value="3">
+        85mm (Tight Depth Portrait)
+      </igx-select-item>
+      <igx-select-item value="4">
+        135mm (Extreme Telephoto Close-up)
+      </igx-select-item>
+      <label igxLabel>Lens Focal Length</label>
+    </igx-select>
+    <div class="row-layout meta-row">
+      <igx-select type="border" placeholder="16:9 Cinema" class="aspect-selector">
+        <igx-select-item value="1">
+          1:1 Square
+        </igx-select-item>
+        <igx-select-item value="2">
+          16:9 Widescreen
+        </igx-select-item>
+        <igx-select-item value="3">
+          9:16 Tiktok / Shorts
+        </igx-select-item>
+        <igx-select-item value="4">
+          4:5 Instagram Portrait
+        </igx-select-item>
+        <label igxLabel>Aspect Ratio</label>
+      </igx-select>
+      <igx-select type="border" placeholder="1 Image" class="aspect-selector">
+        <igx-select-item value="1">
+          1 Image
+        </igx-select-item>
+        <igx-select-item value="2">
+          2 Images
+        </igx-select-item>
+        <igx-select-item value="4">
+          4 Images
+        </igx-select-item>
+        <label igxLabel>Batch Size</label>
+      </igx-select>
+    </div>
+    <button igxButton="contained" type="button" class="generate-t2-i-button">
+      <igx-icon class="icon_1">
+        bolt
+      </igx-icon>
+      <span>Generate Cinematic Art (Cost: 1 Credit)</span>
+    </button>
+  </div>
+  <div class="column-layout preview-output">
+    <div class="column-layout active-progress">
+      <div class="row-layout meta">
+        <p class="text-ay-7oz-2">
+          Render Process: Queue #1
+        </p>
+        <p class="ig-typography__caption text-gymqy-5">
+          75% - Processing Details...
+        </p>
+      </div>
+      <igx-linear-bar [value]="75" [animationDuration]="500" textAlign="center" [textTop]="true" class="linear-bar-m-4l-9pp"></igx-linear-bar>
+    </div>
+    <div class="row-layout generated-results">
+      <igx-card class="generated-image-card">
+        <igx-card-media height="200px">
+          <img src="/assets/a-majestic-futuristic-glowing-a989c00d5c40.png" alt="" class="image" />
+        </igx-card-media>
+        <igx-card-header>
+          <h3 igxCardHeaderTitle>
+            Title goes here...
+          </h3>
+          <h5 igxCardHeaderSubtitle>
+            Subtitle goes here...
+          </h5>
+        </igx-card-header>
+        <igx-card-content>
+          <div class="column-layout title-block">
+            <p class="ig-typography__caption text-gymqy-5">
+              Kyoto Alleyways - Cyberpunk Portrait
+            </p>
+          </div>
+        </igx-card-content>
+        <igx-card-actions>
+          <ng-container igxStart></ng-container>
+          <ng-container igxEnd>
+            <button igxIconButton="flat" class="icon-button-7sujte">
+              <igx-icon class="icon">
+                download
+              </igx-icon>
+            </button>
+            <button igxIconButton="flat" class="icon-button-odfd-0h">
+              <igx-icon class="icon_2">
+                favorite
+              </igx-icon>
+            </button>
+            <button igxIconButton="flat" class="icon-button-hxpn-1j">
+              <igx-icon class="icon_3">
+                delete
+              </igx-icon>
+            </button>
+          </ng-container>
+        </igx-card-actions>
+      </igx-card>
+    </div>
+  </div>
+</div>
